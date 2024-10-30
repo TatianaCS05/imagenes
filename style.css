@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Agrega espacio en los bordes en dispositivos móviles */
+    box-sizing: border-box;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px; /* Limita el ancho del input en pantallas grandes */
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio extra debajo del botón */
+  }
+  
+  #imagesContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Media queries para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    #imagesContainer {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Tamaño menor para móviles */
+    }
+  
+    input, button {
+      font-size: 14px; /* Reduce ligeramente el tamaño de fuente */
+    }
+  }
+  
